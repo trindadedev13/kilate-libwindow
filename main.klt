@@ -1,0 +1,13 @@
+work main(): bool {
+  let name   = "Kilate Lib Window Test"
+  let width  = 500
+  let height = 500
+  let x = 0
+  let y = 0
+
+  sleep -> 5000 // wait 5 seconds for display init
+
+  kw_open_window -> name, width, height, x, y
+
+  return -> true
+}
